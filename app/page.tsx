@@ -3,7 +3,7 @@ import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
 import Header from "./header";
 import { getServerSession } from "next-auth";
-import { handler } from "./api/auth/[...nextauth]/route";
+import { handler } from "./(auth)/api/auth/[...nextauth]/route";
 
 export default function Home() {
   const { data: session } = useSession();
